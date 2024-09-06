@@ -1,0 +1,63 @@
+.header{
+  height:55px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.leftsec{
+  align-items: center;
+  display:flex;
+}
+
+.hbmenu{
+  height:20px;
+  margin-left: 24px;
+  margin-right: 24px;
+  height: 24px;
+}
+
+.ytmenu{
+  height:20px;
+}
+
+.midsec{
+  flex:1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+  display:flex;
+  align-items: center;
+}
+
+.rightsec{
+
+  background-color: aqua;
+  width:200px;
+}
+
+.searchbutton{
+  height:40px;
+  width:60px;
+}
+
+.voice{
+  height: 40px;
+  width:40px;
+}
+
+.search{
+  flex:1;
+  height:36px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(235, 225, 225);
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+.search::placeholder{
+  padding-left: 10px;
+  font-family: roboto,arial;
+  font-size: 16px;
+}
