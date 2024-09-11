@@ -1,0 +1,39 @@
+.sidebar{
+    background-color: white;
+    position: fixed;
+    top: 55px;
+    bottom: 0;
+    left: 0;
+    width: 72px;  
+    z-index: 400; 
+    border-right: 1px;
+    border-right-color: rgb(232, 230, 230);
+ /*   border-style: solid;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    */
+    }
+
+
+    .sblink{
+        height: 74px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .sblink:hover{
+        background-color: rgb(229, 230, 233);
+    }
+
+    .sblink img {
+        height: 24px;
+        margin-bottom: 4px;
+    }
+
+    .sblink div{
+        font-size: 10px;
+    }

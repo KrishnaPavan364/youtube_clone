@@ -1,0 +1,193 @@
+.header{
+  height:55px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(232, 230, 230);
+  z-index: 100;
+
+}
+
+.leftsec{
+  align-items: center;
+  display:flex;
+}
+
+.hbmenu{
+  height:20px;
+  margin-left: 24px;
+  margin-right: 24px;
+  height: 24px;
+}
+
+.ytmenu{
+  height:20px;
+}
+
+.midsec{
+  flex:1;
+  margin-left: 5px;
+  margin-right: 15px;
+  max-width: 500px;
+  display:flex;
+  align-items: center;
+}
+
+.ser{
+  height:25px;
+  margin-top:4px;
+}
+
+.searchbutton{
+  height: 39px;
+  width: 60px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(200, 200, 200); 
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-left: -1px;
+  margin-right: 8px;
+}
+
+.searchbutton, .voice, .uploaddiv, .ytappdiv, .notif_div{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+
+button:hover {
+  background-color: rgb(240, 240, 240);
+  border-color: rgb(180, 180, 180);
+}
+
+button:active {
+  background-color: rgb(220, 220, 220);
+}
+
+.voice{
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(235, 240, 244);
+}
+
+.voicebuttton{
+  height: 24px;
+  margin-top: 0px;
+  margin-left: 1px;
+}
+
+
+
+.voice{
+  height: 40px;
+  width:40px;
+}
+
+.search{
+  flex:1;
+  height:36px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(200, 200, 200); 
+  font-size: 16px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  box-shadow: inset 1px 2px 3px rgba(0,0,0,0.03);
+  width: 0;
+}
+
+.search::placeholder{
+  padding-left: 10px;
+  font-family: roboto,arial;
+  font-size: 16px;
+}
+
+.rightsec{
+  margin-right: 24px;
+  width:180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap:10px;
+}
+
+.ytapps{
+  height: 28px;
+}
+
+.upload{
+  height: 28px;
+}
+
+.notif{
+  height: 28px;
+}
+
+.dp{
+  height: 40px;
+  border-radius: 35px;
+  object-fit: cover ;
+}
+
+@media (max-width: 600px) {
+  .rigtsec{
+      gap: 5px;
+  }
+}
+
+  @media (max-width: 600px) {
+    .header{
+        gap: 5px;
+    }
+  }
+
+.notif_div{
+  position: relative;
+}
+
+  .number{
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    background-color: rgb(238, 82, 82);
+    color: aliceblue;
+    font-size: 10px;
+    padding-left: 2px;
+    padding-right: 2px ;
+    padding-top: 2px;
+    padding-bottom: 1px;
+    border-radius: 20px;
+  }
+
+  .searchbutton .tooltip, .voice .tooltip,
+  .uploaddiv .tooltip,.ytappdiv .tooltip,.notif_div .tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+
+    .searchbutton:hover .tooltip, .voice:hover .tooltip,
+    .uploaddiv:hover .tooltip, .ytappdiv:hover .tooltip,.notif_div:hover .tooltip{
+      opacity: 1;
+  }
+
